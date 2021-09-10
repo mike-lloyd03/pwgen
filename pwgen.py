@@ -42,7 +42,7 @@ class PasswordGenerator:
             word = self._get_random_word()
         if len(word) > self.max_word_length:
             word = self._get_random_word()
-        return word
+        return word.lower()
 
     def _build_passwd_list(self):
         passwd_list = [self._get_random_word() for i in range(self.n_words)]
